@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int t,g1,s1,b1,g2,s2,b2;
+   cin>>t;
+   for(int i=0;i<t;i++)
+   {
+       cin>>g1>>s1>>b1>>g2>>s2>>b2;
+       int sum1=0,sum2=0;
+       sum1=g1+b1+s1;
+       sum2=g2+b2+s2;
+       if(sum1>sum2)
+       {
+           cout<<"1"<<endl;
+       }
+       else
+       {
+           cout<<"2"<<endl;
+       }
+   }
+   
+	return 0;
+}
