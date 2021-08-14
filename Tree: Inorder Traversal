@@ -1,0 +1,17 @@
+
+    void inOrder(Node *root)
+     {
+       int data;
+       cin>>data;
+       if(root==NULL)
+       {
+           return;
+       }
+       else 
+       {
+          inOrder(root->left);
+          cout<<root->data<<" ";
+          inOrder(root->right);
+       }
+    }
+
