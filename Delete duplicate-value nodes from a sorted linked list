@@ -1,0 +1,23 @@
+SinglyLinkedListNode* removeDuplicates(SinglyLinkedListNode* llist) 
+{
+    SinglyLinkedListNode* ptr1=llist;
+     
+    while(ptr1==NULL)
+    {
+        return NULL;
+    }
+    while(ptr1->next!=NULL)
+    {
+        if(ptr1->data==ptr1->next->data)
+        {
+            ptr1->next=ptr1->next->next;
+            
+        }
+        else
+        {
+            ptr1=ptr1->next;
+        }
+    }
+    return llist;
+}
+
