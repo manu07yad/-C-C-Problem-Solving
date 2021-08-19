@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;
+    for(int a0 = 0; a0 < t; a0++){
+        long b;
+        long w;
+        cin >> b >> w;
+        long x;
+        long y;
+        long z;
+        cin >> x >> y >> z;
+        
+        long min, n_chg = w;
+        if (x > y) {min = y; n_chg = b;}
+        else min = x;
+        long res = b*x + w*y;
+        long chg = min*(b+w) + z*n_chg;
+        if(res > chg) res = chg;
+        cout << res << endl;
+    }
+    return 0;
+}
