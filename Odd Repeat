@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int t;
+cin>>t;
+while(t--)
+{
+int N,K,S,P;
+cin>>N>>K>>S;
+S=S -(N*N);
+P=S/(K-1);
+cout<<P<<endl;
+}
+	return 0;
+}
