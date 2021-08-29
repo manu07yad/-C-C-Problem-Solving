@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int A,B,C;
+	    cin>>A>>B>>C;
+	    int S;
+	    if(A>B)
+	    {
+	        S=B;
+	    }
+	    else
+	    {
+	        S=A;
+	    }
+	    if(S>C)
+	    {
+	        S=C;
+	    }
+	    else
+	    {
+	        S=S;
+	    }
+	    if(S==A)
+	    {
+	        cout<<"Draw"<<endl;
+	    }
+	    else if(S==B)
+        {
+	        cout<<"Bob"<<endl;
+	    }
+	    else if(S==C)
+	    {
+	        cout<<"Alice"<<endl;
+	    }
+	    
+	}
+	return 0;
+}
