@@ -1,0 +1,16 @@
+string solve(long a, long b, long x, long y)
+ {
+     string str;
+     int r= __gcd(a,b);
+     int s= __gcd(x,y);
+     if (r==s)
+     {
+         str.append("YES");
+     }
+     else 
+     {
+         str.append("NO");
+     }
+     return str;
+    
+}
